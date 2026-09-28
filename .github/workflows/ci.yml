@@ -13,7 +13,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e '.[dev]'
       - run: ruff check src tests
-      - run: pytest -q
+      - run: pytest -q tests
       - run: python -m supply_dro.experiment
       - run: python -m supply_dro.final_campaign
 
