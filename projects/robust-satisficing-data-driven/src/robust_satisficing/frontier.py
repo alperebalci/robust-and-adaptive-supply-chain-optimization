@@ -6,7 +6,7 @@ from dataclasses import dataclass
 
 import numpy as np
 
-from .model import SourcingProblem, SourcingSolution, empirical_solution, robust_satisficing_solution
+from .model import (\n    SourcingProblem,\n    SourcingSolution,\n    empirical_solution,\n    robust_satisficing_solution,\n)
 
 
 @dataclass(frozen=True)
