@@ -12,6 +12,7 @@ This repository is the primary umbrella repository for this Jors Academy researc
 - [`generative-supply-chain-scenarios-stochastic-optimization-pytorch`](projects/generative-supply-chain-scenarios-stochastic-optimization-pytorch/)
 - [`hierarchical-supply-chain-rl`](projects/hierarchical-supply-chain-rl/)
 - [`robust-supply-chain-network-optimization`](projects/robust-supply-chain-network-optimization/)
+- [`robust-satisficing-data-driven`](projects/robust-satisficing-data-driven/)
 
 Each consolidated project keeps its own files and a `SOURCE_REPOSITORY.md` provenance record. The snapshot preserves the source repository's default-branch files at consolidation time; repository-level history and metadata remain separate from the snapshot.
 <!-- portfolio-umbrella:end -->

@@ -13,11 +13,12 @@ This repository belongs to a broader uncertainty-aware optimization series. The 
 7. **robust-healthcare-inventory-optimization** — robust inventory decisions in a healthcare setting.
 8. **wasserstein-dro-inventory-optimization-python** — Wasserstein distributionally robust optimization for inventory.
 9. **distributionally-robust-supply-chain-optimization** — supply-network DRO under demand shift and disruptions, extended with sequential control.
-10. **distributionally-robust-decision-focused-learning** — DRO combined with end-to-end decision-focused learning.
-11. **conformal-prediction-robust-inventory-optimization-python** — predictive uncertainty sets calibrated using conformal prediction and then passed to optimization.
-12. **generative-supply-chain-scenarios-stochastic-optimization-pytorch** — learned scenario generation feeding stochastic optimization.
-13. **risk-based-resource-allocation-milp-python** and **risk-aware-convoy-escort-allocation-milp** — explicit risk-aware objective/constraint formulations.
-14. **sddp-multistage-energy-storage** and **mpi-sppy-multistage-stochastic-planning** — multistage stochastic decision making.
+10. **robust-satisficing-data-driven** — target-driven Wasserstein robust satisficing that minimizes fragility rather than fixing an ambiguity radius.
+11. **distributionally-robust-decision-focused-learning** — DRO combined with end-to-end decision-focused learning.
+12. **conformal-prediction-robust-inventory-optimization-python** — predictive uncertainty sets calibrated using conformal prediction and then passed to optimization.
+13. **generative-supply-chain-scenarios-stochastic-optimization-pytorch** — learned scenario generation feeding stochastic optimization.
+14. **risk-based-resource-allocation-milp-python** and **risk-aware-convoy-escort-allocation-milp** — explicit risk-aware objective/constraint formulations.
+15. **sddp-multistage-energy-storage** and **mpi-sppy-multistage-stochastic-planning** — multistage stochastic decision making.
 
 ## Conceptual differences
 
@@ -26,6 +27,7 @@ This repository belongs to a broader uncertainty-aware optimization series. The 
 - **Chance constraints:** control the probability of constraint violation.
 - **Robust optimization:** protects against every realization in a specified uncertainty set.
 - **DRO:** protects against distributions in an ambiguity set rather than individual realizations.
+- **Robust satisficing:** specifies an acceptable target and minimizes fragility to distributional deviation, rather than fixing an ambiguity radius first.
 - **Conformal optimization:** derives finite-sample predictive uncertainty sets before optimization.
 - **Generative scenarios:** learns a scenario generator, but the downstream optimizer remains a separate decision layer.
 - **Multistage stochastic optimization:** decisions adapt repeatedly as information arrives.
