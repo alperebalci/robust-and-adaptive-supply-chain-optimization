@@ -1,0 +1,17 @@
+schema_version: 1
+repository: robust-and-adaptive-supply-chain-optimization
+role: umbrella
+axis: application
+area: robust-supply-chain
+status: active
+owner: jorsacademy
+projects:
+  - adjustable-robust-supply-chain-optimization-ccg
+  - agent-based-supply-chain-simulation-python
+  - generative-supply-chain-scenarios-stochastic-optimization-pytorch
+  - hierarchical-supply-chain-rl
+  - robust-supply-chain-network-optimization
+conventions:
+  provenance_records: true
+  reproducibility_expected: true
+  benchmark_assumptions_documented: true
