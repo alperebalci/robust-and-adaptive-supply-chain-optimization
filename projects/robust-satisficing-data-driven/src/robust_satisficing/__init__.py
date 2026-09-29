@@ -1,6 +1,6 @@
-from .calibration import TargetSelection, select_target_by_validation
 """Data-driven robust satisficing for a sourcing allocation model."""
 
+from .calibration import TargetSelection, select_target_by_validation
 from .model import (
     SourcingProblem,
     SourcingSolution,
@@ -11,12 +11,12 @@ from .model import (
 )
 
 __all__ = [
-    "TargetSelection",
-    "select_target_by_validation",
     "SourcingProblem",
     "SourcingSolution",
+    "TargetSelection",
     "empirical_solution",
     "evaluate_solution",
     "robust_satisficing_solution",
+    "select_target_by_validation",
     "wasserstein_dro_solution",
 ]
