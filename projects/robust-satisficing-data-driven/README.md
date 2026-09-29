@@ -88,6 +88,8 @@ The synthetic stress result is an experiment, not evidence that robust satisfici
 
 ## Validation contract
 
+A validation-only calibration utility can select among predeclared acceptable targets without using final-test observations.
+
 The tests verify that:
 
 - supplier allocations sum to one and satisfy supplier caps;
@@ -108,7 +110,7 @@ Natural extensions are:
 - piecewise-linear losses;
 - discrete/combinatorial sourcing decisions;
 - lot sizing with recourse;
-- target selection by validation;
+- validation-only target selection across a predeclared target grid;
 - finite-sample confidence studies;
 - direct comparison with the umbrella repository's existing Wasserstein-DRO supply-network models.
 
