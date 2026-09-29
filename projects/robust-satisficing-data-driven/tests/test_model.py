@@ -6,6 +6,7 @@ from robust_satisficing import (
     empirical_solution,
     evaluate_solution,
     robust_satisficing_solution,
+    select_target_by_validation,
     wasserstein_dro_solution,
 )
 
@@ -63,3 +64,20 @@ def test_evaluation_uses_fixed_allocation(problem: SourcingProblem) -> None:
 
     assert set(metrics) == {"mean_cost", "p90_cost", "std_cost"}
     assert np.isfinite(list(metrics.values())).all()
+
+
+
+def test_target_selection_uses_declared_validation_candidates(problem: SourcingProblem) -> None:
+    rng = np.random.default_rng(77)
+    validation = rng.multivariate_normal(
+        problem.empirical_mean + np.array([0.5, 0.2, 0.0, 0.0]),
+        np.eye(problem.n_suppliers) * 0.2,
+        size=300,
+    )
+    z0 = empirical_solution(problem).empirical_cost
+    targets = np.array([z0 + 0.05, z0 + 0.20, z0 + 0.40])
+    selected = select_target_by_validation(problem, validation, targets)
+
+    assert selected.target in targets
+    assert selected.solution.empirical_cost <= selected.target + 1e-8
+    assert np.isfinite(selected.validation_p90)
