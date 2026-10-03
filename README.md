@@ -12,6 +12,7 @@ This repository is the primary umbrella repository for this Jors Academy researc
 - [`generative-supply-chain-scenarios-stochastic-optimization-pytorch`](projects/generative-supply-chain-scenarios-stochastic-optimization-pytorch/)
 - [`federated-demand-inventory-optimization`](projects/federated-demand-inventory-optimization/) — federated demand learning evaluated through downstream inventory cost and service
 - [`hierarchical-supply-chain-rl`](projects/hierarchical-supply-chain-rl/)
+- [`system-dynamics-for-operations`](projects/system-dynamics-for-operations/) — stock-flow feedback, delayed supply line and bullwhip policy experiments
 - [`robust-supply-chain-network-optimization`](projects/robust-supply-chain-network-optimization/)
 
 Each consolidated project keeps its own files and a `SOURCE_REPOSITORY.md` provenance record. The snapshot preserves the source repository's default-branch files at consolidation time; repository-level history and metadata remain separate from the snapshot.
