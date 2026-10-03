@@ -9,6 +9,7 @@ projects:
   - adjustable-robust-supply-chain-optimization-ccg
   - agent-based-supply-chain-simulation-python
   - generative-supply-chain-scenarios-stochastic-optimization-pytorch
+  - federated-demand-inventory-optimization
   - hierarchical-supply-chain-rl
   - robust-supply-chain-network-optimization
 conventions:

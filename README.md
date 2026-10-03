@@ -10,6 +10,7 @@ This repository is the primary umbrella repository for this Jors Academy researc
 - [`adjustable-robust-supply-chain-optimization-ccg`](projects/adjustable-robust-supply-chain-optimization-ccg/)
 - [`agent-based-supply-chain-simulation-python`](projects/agent-based-supply-chain-simulation-python/)
 - [`generative-supply-chain-scenarios-stochastic-optimization-pytorch`](projects/generative-supply-chain-scenarios-stochastic-optimization-pytorch/)
+- [`federated-demand-inventory-optimization`](projects/federated-demand-inventory-optimization/) — federated demand learning evaluated through downstream inventory cost and service
 - [`hierarchical-supply-chain-rl`](projects/hierarchical-supply-chain-rl/)
 - [`robust-supply-chain-network-optimization`](projects/robust-supply-chain-network-optimization/)
 
