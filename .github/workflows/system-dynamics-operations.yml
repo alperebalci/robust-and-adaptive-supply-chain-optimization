@@ -1,0 +1,22 @@
+name: System Dynamics for Operations
+
+on:
+  push:
+    paths:
+      - 'projects/system-dynamics-for-operations/**'
+      - '.github/workflows/system-dynamics-operations.yml'
+  pull_request:
+    paths:
+      - 'projects/system-dynamics-for-operations/**'
+      - '.github/workflows/system-dynamics-operations.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r projects/system-dynamics-for-operations/requirements.txt
+      - run: PYTHONPATH=projects/system-dynamics-for-operations pytest -q projects/system-dynamics-for-operations
