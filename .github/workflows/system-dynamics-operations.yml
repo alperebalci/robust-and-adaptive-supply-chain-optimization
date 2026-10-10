@@ -2,13 +2,9 @@ name: System Dynamics for Operations
 
 on:
   push:
-    paths:
-      - 'projects/system-dynamics-for-operations/**'
-      - '.github/workflows/system-dynamics-operations.yml'
+    branches: [main]
   pull_request:
-    paths:
-      - 'projects/system-dynamics-for-operations/**'
-      - '.github/workflows/system-dynamics-operations.yml'
+  workflow_dispatch:
 
 jobs:
   test:
